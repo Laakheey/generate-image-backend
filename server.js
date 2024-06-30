@@ -33,7 +33,6 @@ app.post('/generate-image', async (req, res) => {
       }
     );
     
-    console.log("🚀 ~ app.post ~ response:", response)
     if (response.status === 200) {
       res.set('Content-Type', 'image/jpeg');
       res.send(response.data);
